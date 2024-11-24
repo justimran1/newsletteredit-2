@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+body{
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color:  hsl(235, 18%, 26%);
+    padding: 2rem 9rem;
+}
+.sign-up{
+background-color: white;
+display: flex;
+flex-direction: row;
+border-radius: 20px;
+margin: 10px 30px;
+max-width: 850px;
+height: 520px;
+}
+.left{
+    max-width: 60%;
+    padding: 1.3rem 2.5rem;
+} 
+.right{
+    padding: .5rem 0;
+}
+#im2{
+height: 500px;
+width: 100%;
+padding-right: .6rem;
+display:block;
+}
+.email-add{
+    margin-top: 39px;
+    margin-bottom: 0;
+    color:  hsl(234, 29%, 20%);
+    font-size: 14px;
+    display: inline;
+}
+.email-error{
+ display: none;
+ color:red;
+ font-size: 14px;
+ transform: translateX(120%);
+ right: 20px;
+ left: 0;
+}
+.left-text{
+    max-width: 90%;
+}
+input{
+    padding: .7rem 8rem .7rem 1rem;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+input#input-email{
+    background-color: hsl(4, 100%, 67%);
+    border: 1px solid red;
+    opacity: 40%;
+}
+button {
+    margin-top: 17px;
+    padding: .9rem 3.7rem 1rem 3rem; 
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: hsl(235, 18%, 26%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+    transform: scale(1.1);
+}
+#im3{
+    display: none;
+}
+
+p{
+    color: hsl(234, 29%, 20%);
+}
+
+
+@media only screen and (max-width: 700px) {
+    /* Styles for mobile devices */
+
+    .container{
+        background-color: white;
+        padding: 0;
+    }
+    .sign-up{
+        background-color: white;
+        display: flex;
+        flex-direction:column-reverse;
+        max-height: 100vh;
+        max-width: 100vh;
+        margin: 0;
+        padding: 0;
+        }
+#im2{
+    display:none;
+}
+#im3{
+    display: block;
+}
+.left{
+    max-width: 100%;
+    height: 50%;
+    padding: 0;
+} 
+.left-text{
+     max-width:100%;
+     padding:1rem 1rem;
+}
+.email-add{
+    margin-top:10px;
+    margin-bottom: 10px;
+    color:  hsl(231, 7%, 60%);
+}
+
+button {
+    margin-top: 25px;
+    padding: 1rem 3rem 1rem 3rem; 
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: hsl(235, 18%, 26%);
+    width: 100%;
+}
+input{
+    padding: .9rem 8rem .9rem .7rem;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+    width: 100%;
+}
+.right img{
+    display:block;
+    max-width:100%;
+    object-fit: cover;
+    padding-right: 0;
+}
+body{
+    margin:0;
+    padding: 0;
+}
+.email-error{
+    display:none;
+    color:red;
+    font-size: 14px;
+    transform: translateX(100%);
+    right: 20px;
+    left: 0;
+}
+
+p{
+    color: hsl(234, 29%, 20%);
+}
+
+
+
+
+}
